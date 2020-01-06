@@ -1,4 +1,4 @@
-// Code Magnets in the book //
+// Code Magnets in the Java book //
 
 class Drumkit {
     boolean topHat = true;
