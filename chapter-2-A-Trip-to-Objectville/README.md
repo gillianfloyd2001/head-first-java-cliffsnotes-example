@@ -79,7 +79,8 @@ Object has an Instance Variable and methods, but these are design to work with t
         Think of a class as a blueprint to the object, the class mainly tell the java virtual machine how to contruct the object. 
 
 - OBJECT:
-    Each object that was constructed from that class has it's own values for the Instance Variable of that class.
+    An object is a self-contained component which consists of methods and properties to make a particular type of data useful. Object determines the behavior of the class.
+        When you ask an object to do something, you are actually asking the object to say no ,invoke, or the object says yes, which it will excute one of its methods based off what you asked it to do.  
 
 ## Making an Object
 When making an Object you need two classes:
@@ -88,14 +89,13 @@ When making an Object you need two classes:
         - the main class your using like Dog, or Television; Something singular.
 
     Second class needs to a class that test the new class. 
-        This is called a Tester class:
+  **Tester class**:
+     - is where you put the main() method and within your main() method you create and access objects of your new class type. 
 
-            - which is where you put the main method and within your main method you create and access objects of your new class type. 
+    The Tester class has one job: 
+        - to try out the method and variable of your new object class type. 
 
-            The Tester class only has one job: 
-                - this job is to try out the method and variable of your new object class type. 
-
-write the class: this it the first step
+### Writing the main class: 
 
     ```java 
     class Dog {
@@ -109,7 +109,7 @@ write the class: this it the first step
         }
     }
     ```
-writing a tester (TestDrive) class: second step
+### Writing a tester (TestDrive) class: second step
 
     ``` java 
     class DogTestDrive {
@@ -118,7 +118,7 @@ writing a tester (TestDrive) class: second step
         }
     }
     ```
-In your tester, make an objects and access the object's variables and methods: third step
+    In your tester, make an objects and access the object's variables and methods: third step
 
     ``` java
     class DogTestDrive {
@@ -130,8 +130,8 @@ In your tester, make an objects and access the object's variables and methods: t
         }
     }
     ```
-## Two Uses of Main
-The test program to run within the main method, but the true application, needs objects to talk to other objects and call methods, as opposed to a static main() method creating and testing objects. 
+## Two Uses of Main()
+The test program to run within the main() method, but the true application, needs objects to talk to other objects and call methods, as opposed to a static main() method creating and testing objects. 
 
 - to test your real class
 - to launch/start your Java application
