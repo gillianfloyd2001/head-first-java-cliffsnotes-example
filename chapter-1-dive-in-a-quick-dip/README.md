@@ -11,9 +11,11 @@
 
 ## Code Structure in Java
 - What is a Source File and What goes in it?
-A source file has a source code in it which has a .java extension on it. This holds mutiple class definition which is just a pieces of your program. So in other words your Classes goes into your Source File. 
+A source file has a source code in it which has a .java extension on it. This holds one class definition which is just a piece of your program. So in other words your Class goes into your Source File. 
+
 - What goes in a Class? 
 Inside your class, it has one or many methods. For the method, this holds instructions for how the class should work. 
+
 - What goes in a method?
 Within the method, there are statements that go into the method. These statements are like instructions for how the method should performed. 
 
@@ -24,7 +26,7 @@ public staic void main(String[] args) {
      // my code would go here. 
 }
 ```
-After looking for code that looks like that, the program then runs the code that is in between the curly braces of your main method. Every Java applications has at least one MAIN method, but Java Applications can have as many classes and methods. I only need one main per application. 
+After looking for code that looks like that, the program then runs the code that is in between the curly braces of your main method. Every Java applications has at least one class or at least one MAIN method. I only need one main per application. 
 
 ## Writing A Class With A Main 
 In Java, EVERYTHING goes into a class. 
