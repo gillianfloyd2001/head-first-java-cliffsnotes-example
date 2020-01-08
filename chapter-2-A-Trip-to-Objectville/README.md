@@ -28,7 +28,7 @@ Inheritance is typically classes inhertiing or passing certain methods down to a
 
     ```java
     class Parents { // this is the superclass for the classes above it. 
-        twoDaughter()
+        twoDaughter();
     }
     ```
 
@@ -36,11 +36,11 @@ Inheritance is typically classes inhertiing or passing certain methods down to a
 
     ```java
     class Aimee extends Parents {
-        System.out.println("hello");
+        System.out.println("Hello");
     }
     
     class Richard extends Parents {
-        System.out.println("World")
+        System.out.println("World");
     }
     ```
     extends 
