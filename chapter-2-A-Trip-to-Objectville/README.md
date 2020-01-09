@@ -12,39 +12,35 @@
 ## Inheritance
 Inheritance is typically classes inhertiing or passing certain methods down to a subclass from the superclass.
 
-- When inherting from a superclass:
-    You need to look at your classes and see if they have anything in common:
-
+- Example of superclass:
     ```java
-    class Richard {
-        twoDaughter();
-    }
-    class Aimee {
-        twoDaughter();
+    class Teacher {
+        String designation = "Teacher";
+        String collegeName = "BegginnerBook";
+
+        void does() {
+            System.out.println("Teaching");
+        }
     }
     ```
 
-    Once you find the similarities, you can break them up into a superclass:
+The class Parents is the superclass this will not inherit from anything. But the next example will be a subclass which will inherit from the superclass.
 
-    ```java
-    class Parents { // this is the superclass for the classes above it. 
-        twoDaughter();
+```java
+public class PhysicsTeacher extends Teacher { // the subclass is PhysicsTeacher
+    String mainSubject = "Physics";
+    public static void main(String[] args) {
+        PhysicsTeacher obj = new PhysicsTeacher();
+        System.out.println(obj.collegeName);
+        System.out.println(obj.designation);
+        System.out.println(obj.mainSubject);
+        obj.does();
     }
-    ```
+}
+```
+You can only use `extends` on the superclass when creating a subclass.
 
-    Once you create the superclass:
-
-    ```java
-    class Aimee extends Parents {
-        System.out.println("Hello");
-    }
-    
-    class Richard extends Parents {
-        System.out.println("World");
-    }
-    ```
-    extends 
-    This is just one relationship, that you can link and pull apart to create a subclass and a superclass. The class Richard and the class Aimee inherited from the superclass Parent. 
+Bases off this example, I can say that a PhysicsTeacher **is-a** Teacher. This means that a subclass has a **is-a relationship** with the superclass.
 
 ## Overriding methods
 The meaning of Overriding is a subclass redefines one of its inherited methods when it needs to chage or extend that behavior of that method.
