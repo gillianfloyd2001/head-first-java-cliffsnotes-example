@@ -43,20 +43,42 @@ You can only use `extends` on the superclass when creating a subclass.
 Bases off this example, I can say that a PhysicsTeacher **is-a** Teacher. This means that a subclass has a **is-a relationship** with the superclass.
 
 ## Overriding methods
-The meaning of Overriding is a subclass redefines one of its inherited methods when it needs to chage or extend that behavior of that method.
+- Declaring a method in your subclass which is already present in your superclass is know as method overriding. Overriding is done so that a subclass can give it's own implementation to a method which is already provided by the parent class.
+    - In this case the method in superclass is called overridden method.
+    - The method in the subclass is called overriding method.
+
 
 ```java
-    class Parent{
-        twoDaughter();
+class Human {
+    //Overridden method
+    public void eat() {
+        System.out.println("Human is eating");
     }
+}
 
-    class Aimee extends Parent {
-        twoDaughter() {
-            // this is where you tell the method what to override it with. 
-        }
+class Boy extends Human {
+    //Overriding methods
+    public void eat(){
+        System.out.println("Boy is eating");
     }
+    public static void main(String[] args) {
+        Boy obj = new Boy();
+        //This will call the subclass version of eat()
+        obj.eat();
+    }
+}
 ```
-When overriding, you create new methods within the classes that extends the superclass. This will tell the subclass that has the new method or the override on it, what is needs to do. 
+Output:
+```java
+Boy is eating
+```
+##### Why do we use Overriding methods?
+- The main reason we override is that the class can give it's own specific implementation to a inherited method without even changing the superclass code. 
+
+    - This is helpful when a class several subclasses, so if a subclass needs to use the superclass method, 
+    
+    - it can use it and the other classes that want to have different implementation can use overriding feature to make changes without touching the superclass code.
+    
 
 ## Differences between things objects do and know
 - Things objects can do: 
