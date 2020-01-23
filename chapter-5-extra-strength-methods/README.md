@@ -74,7 +74,7 @@
 
 - The goal is the same, though, so the game still needs to make a DotCom instance assign it a location sowmehere in the row, get user input, and when all of the DotCom's cells have been hit, the game is over. This simplified version of the game gives us a big head start on building the full game. If we can get this small one working, we can scale it up to the more complex on later.       
 ```java
-class SimpleDotcom {
+class SimpleDotCom {
     int[] locationCells;
     int numOfHits;
 
@@ -297,7 +297,7 @@ public class SimpleDotCom {
         for (int cell : locationCells ) {
             if (guess = cell) {
                 result = "hit";
-                numOfHits++ 
+                numOfHits++;
                 break;
             }
         }// out of the loop
