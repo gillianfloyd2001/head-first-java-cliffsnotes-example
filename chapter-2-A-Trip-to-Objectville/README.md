@@ -68,10 +68,9 @@ class Boy extends Human {
     }
 }
 ```
-Output:
-```java
-Boy is eating
-```
+- Output:
+    - Boy is eating.
+
 ##### Why do we use Overriding methods?
 - The main reason we override is that the class can give it's own specific implementation to a inherited method without even changing the superclass code. 
 
@@ -115,39 +114,39 @@ When making an Object you need two classes:
 
 ### Writing the main class: 
 
-    ```java 
-    class Dog {
-        // instance variables
-        int x;
-        String breed;
-        String name;
+```java 
+class Dog {
+// instance variables
+    int x;
+    String breed;
+    String name;
 
-        void bark() {   // a method
-            System.out.println("RUFF! RUFF!");
-        }
+    void bark() {   // a method
+        System.out.println("RUFF! RUFF!");
     }
-    ```
+}
+```
 ### Writing a tester (TestDrive) class: second step
 
-    ``` java 
-    class DogTestDrive {
-        public static void main(String[] args) {// main method
-            // Dog test code goes here;
-        }
+``` java 
+class DogTestDrive {
+    public static void main(String[] args) {// main method
+        // Dog test code goes here;
     }
-    ```
-    In your tester, make an objects and access the object's variables and methods: third step
+}
+```
+- In your tester, make an objects and access the object's variables and methods: third step
 
-    ``` java
-    class DogTestDrive {
-        public static void main(String[] args) {
-            Dog d = new Dog();    //making this a dog object//
-            d.size = 40; // to set the size of the Dog
-            // use the dot operator (.) 
-            d.bark(); // ad to call its bark() method
-        }
+``` java
+class DogTestDrive {
+    public static void main(String[] args) {
+        Dog d = new Dog();    //making this a dog object//
+        d.size = 40; // to set the size of the Dog
+        // use the dot operator (.) 
+        d.bark(); // ad to call its bark() method
     }
-    ```
+}
+```
 ## Two Uses of Main()
 The test program to run within the main() method, but the true application, needs objects to talk to other objects and call methods, as opposed to a static main() method creating and testing objects. 
 
