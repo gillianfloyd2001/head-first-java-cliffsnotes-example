@@ -24,7 +24,7 @@ Inheritance is typically classes inhertiing or passing certain methods down to a
     }
     ```
 
-The class Parents is the superclass this will not inherit from anything. But the next example will be a subclass which will inherit from the superclass.
+The class `Teacher` is the superclass this will not inherit from anything. But the next example will be a subclass which will inherit from the superclass.
 
 ```java
 public class PhysicsTeacher extends Teacher { // the subclass is PhysicsTeacher
