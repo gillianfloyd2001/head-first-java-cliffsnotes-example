@@ -12,19 +12,20 @@
 
 ## Introduction:
 ---
-- __State affects behavior, behavior affects state__
-- We know that objects have __state__ and __behavior__, represented by __instance variables__ and __methods__
+- __State affects behavior, behavior affects state__.
+- We know that objects have __State__ and __Behavior__, represented by __Instance Variables__ and __Methods__.
 - Until now, we haven't looked at how state and behavior are *related*.
     - We already know that each instance of a class (each object of a particular type) can have its own unique values for its instance variables. 
 - An objects has behavior that acts on its state. In other words, __methods use instance variable values__.
+
 ## Methods use object state:
 ---
 ### Remember: A class describes what an object knows and what an object does
-- A class is te blueprint for an object.
+- A class is the blueprint for an object.
     - When writing a class, you're describing how the JVM should make an object of that type. 
     - You know that every object of that type can have different instance variable values. 
         #### Can every object of that type have different method behavior?
-        - The answer to that question is "sort of"
+        - The answer to that question is "sort of".
         - Every instance of a particular class has the same methods, but the methods can behave differently based on the value of the instance variables.
 
         - In a example of a `class Song` ~ this has to instance variables, `title` and `artist`.
@@ -101,7 +102,7 @@ void bark(int numOfBarks) { // "numOfBarks" is the parameter
         - This means they do not give anything back.
         ```java
         void go() {
-            // this returns noting back.
+            // this returns nothing back.
         }
         ```
     - We can declare a method to give a specific type of value back to the caller:
@@ -112,7 +113,7 @@ void bark(int numOfBarks) { // "numOfBarks" is the parameter
         ```
         - When you declare a method to return a value, you __must__ return a value of the declared type!
             - Or a value that is __compatible__ with the declared type.
-- You can send more than on thing to a method:
+- You can send more than one thing to a method:
     - Methods can have multiple parameters. When declaring arguments, you separate them with commas. When passing the arguments, you must seprate them with commas. 
     - **Important**:
         If a method has parameters, you must pass arguments of the right type and right order. 
@@ -172,7 +173,7 @@ void go(int z){
 }
 ```
 The method can't change the bits that were in the calling variables x.
-## Getters ans Setters:
+## Getters and Setters:
 ---
 - Getters and Setters are also known as *Accessors* and *Mutators*.
 - Getters and Setters let you, *get and set things*. 
@@ -234,7 +235,7 @@ theCat.height = 0; // this is no good.
 - This would be a Bad Thing. We need to build Setters methods for all the instance variables, and find a way to force other code to call the setters rather than access the data directly.
 ```java
 public void setHeight(int ht) { 
-    if (ht > 9 ) { // we put in checks to guarantee a minium cat height
+    if (ht > 9 ) { // We put in checks to guarantee a minimum cat height.
         height = ht;
     }
 }
