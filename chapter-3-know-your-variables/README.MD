@@ -1,6 +1,7 @@
 # Know your Variables
 
 ## Table of Contents
+---
 - Declaring a Variable
 - Primitive Types
 - Java Keywords
@@ -8,7 +9,8 @@
 - Objects declaration and assignment
 - Array 
 
-## Declaring a Variable 
+## Declaring a Variable
+---
 When dealing with Java, Java cares about type. Java will not let you put a reference that does not make sense to go into a certain variable name, an example of this is that java will not let you put a floating point number into an interger variable, unless you let the compiler know that you know you that you will lose the precise. 
 
 Your compiler can spot most of the problems before it runs.
@@ -30,6 +32,7 @@ Your compiler can spot most of the problems before it runs.
     ```
 
 ## Primitive Types
+---
 When thinking of **primitives**, think of cups that they have at your local coffehouse or a Starbucks. Now Starbucks have three different sizes, which are "tall", "grande", and "venti" - the word size would be the type in this analogy and the actually sizes are the names like in the example right before this section.
 
 - In Java, primitives come in different sizes, and those sizes have names;
@@ -48,6 +51,7 @@ When thinking of **primitives**, think of cups that they have at your local coff
 These are used for decimal numbers.
 
 ## Java Keywords
+---
 - Rules to name a class, method or variable: these rules are slightly more flexible
     >- Must start with a letter, underscore, or dollar sign($); do not start a name with a number.
 
@@ -82,6 +86,7 @@ This is creating a new Dog instance based off the old instance.
 
 
 ## Objects Declaration and Assignment
+---
 - There are three step of object declaration, creation, and assignment:
     1. Declare a reference variable
         ```java
@@ -104,6 +109,7 @@ This is creating a new Dog instance based off the old instance.
         Assigns the new Dog to the reference variable myDog. 
 
 ## Array
+---
 - Arrays are objects too.
     - used for oreded and effcient list of things. Arrays can give you fast random access by letting you use an index position to get to any element in the array. 
     
